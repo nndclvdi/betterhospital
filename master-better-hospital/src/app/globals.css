@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+	--color-monday-blue: #1053d5;
+	--color-monday-black: #292d32;
+	--color-monday-gray: #6a7686;
+	--color-monday-cyan: #2ea5cb;
+	--color-monday-border: #e8e8e8;
+	--color-monday-stroke: #edeef1;
+	--color-monday-red: #ff133d;
+	--color-monday-green: #34613a;
+	--color-monday-light-green: #0f943e;
+	--color-monday-orange: #ff7020;
+	--color-monday-purple: #732ecb;
+	--color-monday-background: #f3f5f9;
+	--color-monday-gray-background: #f3f3f3;
+	--color-monday-lime-green: #cbee5a;
+	--color-monday-lime-green-char: #deff6e;
+}
+
+@layer components {
+	.btn {
+		@apply flex gap-[10px] items-center justify-center py-4 px-6 h-[56px];
+	}
+
+	.btn-primary {
+		@apply bg-monday-blue text-white rounded-2xl;
+	}
+	.btn-black {
+		@apply bg-monday-black text-white rounded-2xl;
+	}
+	.btn-red {
+		@apply bg-monday-red text-white rounded-full;
+	}
+	.btn-primary-opacity {
+		@apply bg-monday-blue/10 text-monday-blue rounded-2xl ring-0 hover:ring-[2px] hover:ring-monday-blue duration-300;
+	}
+}
+
+@layer utilities {
+	.blue-gradient {
+		background: linear-gradient(329.12deg, #0f4abd 0%, #1053d5 99.12%);
+	}
+	.transition-300 {
+		transition: all 300ms ease-in-out;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	min-height: 100vh;
+	background-color: #f3f5f9;
+	color: #292d32;
+}
+
+.hide-scrollbar {
+	scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+#root {
+	display: flex;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 0%;
+}

@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+
+        <title>Better  - Hospital Management</title>
+        <link rel="icon" href="assets/images/logos/logo-notext.png" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-container" class="flex flex-1">
+            <aside class="relative flex h-auto w-[280px] shrink-0 bg-white">
+                <div class="flex flex-col fixed top-0 w-[280px] shrink-0 h-screen pt-[30px] px-4 gap-[30px]">
+                    <img src="assets/images/logos/logo.svg" class="h-8 w-fit" alt="logo">
+                    <div class="flex flex-col gap-5 mb-5 overflow-y-scroll hide-scrollbar h-full overscroll-contain">
+                        <nav class="flex flex-col gap-4">
+                            <p class="font-medium text-monday-gray">Main Menu</p>
+                            <ul class="flex flex-col gap-2">
+                                <li class="group">
+                                    <a href="overview.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/home-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/home-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Overview
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a href="manage-specialist.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/stetoscop-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/stetoscop-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Specialist
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a href="manage-hospitals.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/hospital-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/hospital-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Hospitals
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a href="manage-transactions.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/note-2-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/note-2-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Transactions
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="flex flex-col gap-4">
+                            <p class="font-medium text-monday-gray">Account Settings</p>
+                            <ul class="flex flex-col gap-2">
+                                <li class="group">
+                                    <a href="manage-doctors.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/profile-2user-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/profile-2user-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Doctors
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group flex flex-col">
+                                    <button data-expand="Manage-Users-Accordion" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/user-square-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full text-left">
+                                            Manage User
+                                        </p>
+                                        <img src="assets/images/icons/arrow-circle-up.svg" class="size-6 flex shrink-0 transition-300" alt="icon">
+                                    </button>
+                                    <div id="Manage-Users-Accordion" class="flex">
+                                        <div class="flex w-[56px] shrink-0 justify-end items-start">
+                                            <img src="assets/images/icons/accordion-branch.svg" class="w-[28px]" alt="icon">
+                                        </div>
+                                        <ul class="flex flex-col gap-1 w-full">
+                                            <li class="group">
+                                                <a href="manage-roles.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                                    <div class="relative flex size-6 shrink-0">
+                                                        <img src="assets/images/icons/profile-tick-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                                        <img src="assets/images/icons/profile-tick-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                                    </div>
+                                                    <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                                        Roles
+                                                    </p>
+                                                    <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                                </a>
+                                            </li>
+                                            <li class="group">
+                                                <a href="manage-users.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                                    <div class="relative flex size-6 shrink-0">
+                                                        <img src="assets/images/icons/profile-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                                        <img src="assets/images/icons/profile-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                                    </div>
+                                                    <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                                        Users
+                                                    </p>
+                                                    <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="group">
+                                    <a href="#" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/setting-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/setting-black.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Settings
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+            <div id="Content" class="flex flex-col flex-1 p-6 pt-0">
+                <div id="Top-Bar" class="flex items-center w-full gap-6 mt-[30px] mb-6">
+                    <div class="flex items-center gap-6 h-[102px] bg-white w-full rounded-3xl p-[18px]">
+                        <div class="flex flex-col gap-2 w-full">
+                            <h1 class="font-bold text-2xl capitalize">Edit Hospital</h1>
+                            <a href="manage-hospitals.html" class="flex items-center gap-1 font-semibold text-monday-gray text-lg leading-none">
+                                <img src="assets/images/icons/arrow-left-grey.svg" class="size-[18px] flex shrink-0" alt="icon"> 
+                                Manage Hospitals
+                            </a>
+                        </div>
+                        <div class="flex items-center flex-nowrap gap-3">
+                            <a href="#">
+                                <div class="flex size-14 rounded-full bg-monday-gray-background items-center justify-center overflow-hidden">
+                                    <img src="assets/images/icons/search-normal-black.svg" class="size-6" alt="icon">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex size-14 rounded-full bg-monday-gray-background items-center justify-center overflow-hidden">
+                                    <img src="assets/images/icons/notification-black.svg" class="size-6" alt="icon">
+                                </div>
+                            </a>
+                            <div class="relative w-fit">
+                                <div class="flex size-14 rounded-full bg-monday-lime-green items-center justify-center overflow-hidden">
+                                    <img src="assets/images/icons/help-desk-black.svg" class="size-6" alt="icon">
+                                </div>
+                                <p class="absolute transform -translate-x-1/2 left-1/2 -bottom-2 rounded-[20px] py-1 px-2 bg-monday-black text-white w-fit font-extrabold text-[8px]">24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 h-[102px] bg-white w-fit rounded-3xl p-[18px]">
+                        <div class="flex rounded-full overflow-hidden size-14">
+                            <img src="assets/images/photos/photo-1.png" class="size-full object-cover" alt="photo">
+                        </div>
+                        <div class="flex flex-col gap-[6px] min-w-[155px] w-fit">
+                            <p class="font-semibold text-lg leading-tight">Nobilo Reyno</p>
+                            <p class="flex items-center gap-1 font-semibold text-monday-gray text-lg leading-none">
+                                <img src="assets/images/icons/user-grey.svg" class="size-[18px]" alt="icon"> 
+                                Manager
+                            </p>
+                        </div>
+                        <a href="mobile-discover.html" class="flex w-6">
+                            <img src="assets/images/icons/logout.svg" class="flex size-6 shrink-0" alt="icon">
+                        </a>
+                    </div>
+                </div>
+                <main class="flex flex-col gap-5 flex-1">
+                    <form action="manage-hospitals.html" class="flex flex-col w-full rounded-3xl p-5 gap-5 bg-white">
+                        <h2 class="font-semibold text-xl capitalize">Complete the form</h2>
+                        <div class="flex items-center justify-between">
+                            <p class="font-medium text-lg text-monday-gray">Upload Image</p>
+                            <div class="flex items-center justify-between w-[500px]">
+                                <div class="group relative flex size-[100px] rounded-2xl overflow-hidden items-center justify-center bg-monday-background">
+                                    <img
+                                        id="Thumbnail"
+                                        src="assets/images/thumbnails/hopistal-2.png"
+                                        data-original="assets/images/thumbnails/hopistal-2.png"
+                                        class="size-full object-contain"
+                                        alt="icon"
+                                    />
+                                    <input type="file" id="File-Input" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" />
+                                </div>
+                                <button type="button" id="Change-Photo" class="btn btn-black w-[152px] font-semibold text-nowrap">
+                                    Change Photo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="font-medium text-lg text-monday-gray">Hospital Name</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative w-[500px]">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/hospital-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-semibold text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[25px] group-has-[:placeholder-shown]:text-monday-black group-has-[:placeholder-shown]:text-lg group-has-[:placeholder-shown]:top-[36px] group-focus-within:top-[25px] transition-300">
+                                        Enter Hospital Name
+                                    </p>
+                                    <input type="text" value="Bimore Hospital" class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[2px] border-monday-border pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300 group-[&.invalid]/errorState:border-monday-red" placeholder="">
+                                </label>
+                                <span class="font-semibold text-lg text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="font-medium text-lg text-monday-gray">Phone Number</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative w-[500px]">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/call-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-semibold text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[25px] group-has-[:placeholder-shown]:text-monday-black group-has-[:placeholder-shown]:text-lg group-has-[:placeholder-shown]:top-[36px] group-focus-within:top-[25px] transition-300">
+                                        Enter Phone Number
+                                    </p>
+                                    <input type="tel" value="082255558005" class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[2px] border-monday-border pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300 group-[&.invalid]/errorState:border-monday-red" placeholder="">
+                                </label>
+                                <span class="font-semibold text-lg text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="font-medium text-lg text-monday-gray mt-[24.5px]">Hospital About</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group flex py-4 px-6 rounded-3xl border-[2px] border-monday-border focus-within:border-monday-black transition-300 w-[500px] group-[&.invalid]/errorState:border-monday-red">
+                                    <div class="flex h-full pr-4 pt-2 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/note-text-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <div class="flex flex-col gap-[6px] pl-4 w-full">
+                                        <p class="placeholder font-semibold text-monday-gray text-sm group-has-[:placeholder-shown]:text-lg group-has-[:placeholder-shown]:text-monday-black transition-300">
+                                            Enter Hospital Description
+                                        </p>
+                                        <textarea class="appearance-none outline-none w-full font-semibold text-lg leading-[160%]" rows="3" placeholder="">A modern hospital providing high-quality care with advanced technology and expert professionals.</textarea>
+                                    </div>
+                                </label>
+                                <span class="font-semibold text-lg text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="font-medium text-lg text-monday-gray">Hospital City</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative rounded-3xl border-[1.5px] border-monday-border focus-within:border-monday-black transition-300 overflow-hidden w-[500px] group-[&.invalid]/errorState:border-monday-red">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/buildings-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-medium text-lg absolute -translate-y-1/2 left-[81px] top-[25px] group-has-[:invalid]:top-[36px] group-has-[:valid]:text-sm group-has-[:valid]:text-monday-gray group-focus-within:top-[25px] transition-300">
+                                        Select City
+                                    </p>
+                                    <select name="" id="" required class="appearance-none w-full h-[72px] font-semibold text-lg outline-none pl-20 pr-6 pb-[14.5px] pt-[32px]">
+                                        <option hidden></option>
+                                        <option value="" selected>Buitenzorg</option>
+                                        <option value="">Buitenzorg</option>
+                                    </select>
+                                    <img src="assets/images/icons/arrow-down-black.svg" class="absolute transform -translate-y-1/2 top-1/2 right-6 size-6" alt="icon">
+                                </label>
+                                <span class="font-semibold text-lg text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <p class="font-medium text-lg text-monday-gray">Post Code</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative w-[500px]">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/barcode-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-semibold text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[25px] group-has-[:placeholder-shown]:text-monday-black group-has-[:placeholder-shown]:text-lg group-has-[:placeholder-shown]:top-[36px] group-focus-within:top-[25px] transition-300">
+                                        Enter Post Code
+                                    </p>
+                                    <input type="text" value="16420" class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[2px] border-monday-border pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300 group-[&.invalid]/errorState:border-monday-red" placeholder="">
+                                </label>
+                                <span class="font-semibold text-lg text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between">
+                            <p class="font-medium text-lg text-monday-gray mt-[24.5px]">Hospital Address</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group flex py-4 px-6 rounded-3xl border-[2px] border-monday-border focus-within:border-monday-black transition-300 w-[500px] group-[&.invalid]/errorState:border-monday-red">
+                                    <div class="flex h-full pr-4 pt-2 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/location-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <div class="flex flex-col gap-[6px] pl-4 w-full">
+                                        <p class="placeholder font-semibold text-monday-gray text-sm group-has-[:placeholder-shown]:text-lg group-has-[:placeholder-shown]:text-monday-black transition-300">
+                                            Enter Address
+                                        </p>
+                                        <textarea class="appearance-none outline-none w-full font-semibold text-lg leading-[160%]" rows="3" placeholder="">Gamiel Warehouse Jl. Industri Raya No. 123 Kawasan Pergudangan Modern Cikarang Barat, Bekasi Jawa Barat, 17530 Indonesia</textarea>
+                                    </div>
+                                </label>
+                                <span class="font-semibold text-lg text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-end gap-4">
+                            <a href="manage-hospitals.html" class="btn btn-red font-semibold">
+                                Cancel
+                            </a>
+                            <button type="submit" class="btn btn-primary font-semibold rounded-full">
+                                Save Changes
+                            </button>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/accordion.js"></script>
+
+        <script src="js/edit-products.js"></script>
+    </body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+
+        <title>Better - Hospital Management</title>
+        <link rel="icon" href="assets/images/logos/logo-notext.png" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="Mobile-Body" class="flex flex-col flex-1 bg-[#dae1e9] min-w-0">
+            <div id="Content-Container" class="flex flex-col min-h-screen w-full max-w-[640px] mx-auto bg-monday-background">
+                <div id="Top-Nav" class="flex relative w-full h-[128px]">
+                    <div class="fixed z-30 top-0 w-full max-w-[640px] px-5 pt-8">
+                        <div class="flex items-center justify-between h-[76px] bg-white rounded-2xl p-4 gap-5 drop-shadow-sm">
+                            <a href="mobile-doctor-details.html" class="size-11 flex shrink-0">
+                                <img src="assets/images/icons/mobile-back-button.svg" class="size-full" alt="icon">
+                            </a>
+                            <h1 class="font-bold text-lg leading-none text-center">Book Doctor</h1>
+                            <a href="#" class="size-11 flex shrink-0">
+                                <img src="assets/images/icons/mobile-more-button.svg" class="size-full" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <main class="flex flex-col flex-1">
+                    <div class="flex items-center rounded-2xl py-5 px-4 bg-white gap-4 mx-5">
+                        <div class="flex size-16 rounded-2xl bg-monday-background overflow-hidden shrink-0">
+                            <img src="assets/images/thumbnails/hopistal-1.png" class="size-full object-cover" alt="icon">
+                        </div>
+                        <div class="flex flex-col gap-[6px] w-full overflow-x-hidden">
+                            <p class="font-semibold text-lg">Bimore Hospital</p>
+                            <div class="flex items-center gap-1 text-nowrap">
+                                <img src="assets/images/icons/location-grey.svg" class="flex size-5 shrink-0" alt="icon">
+                                <p class="font-semibold text-monday-gray truncate">Bogor (1392)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center rounded-full w-fit h-fit shrink-0 bg-monday-orange py-[6px] px-[10px] gap-0.5">
+                            <img src="assets/images/icons/star-sliced-white.svg" class="flex size-5 shrink-0" alt="icon">
+                            <p class="font-semibold leading-none text-white">4.8</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col rounded-2xl border border-monday-stroke p-4 bg-white gap-4 mt-5 mx-5">
+                        <div class="flex items-center gap-[10px]">
+                            <div class="flex size-16 rounded-full bg-monday-background overflow-hidden shrink-0">
+                                <img src="assets/images/photos/photo-1.png" class="size-full object-cover" alt="icon">
+                            </div>
+                            <div class="flex flex-col gap-[6px] w-full">
+                                <p class="font-semibold">Momo Sunchiko</p>
+                                <div class="flex items-center gap-1 text-nowrap">
+                                    <img src="assets/images/icons/stetoscop-grey.svg" class="flex size-5 shrink-0" alt="icon">
+                                    <p class="font-semibold text-monday-gray leading-none">Cardiology</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center rounded-full w-fit h-fit shrink-0 bg-monday-orange py-[6px] px-[10px] gap-0.5">
+                                <img src="assets/images/icons/star-sliced-white.svg" class="flex size-5 shrink-0" alt="icon">
+                                <p class="font-semibold leading-none text-white">5.0</p>
+                            </div>
+                        </div>
+                        <hr class="border border-monday-stroke">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="flex flex-col gap-2 items-center text-center shrink-0">
+                                <p class="flex items-center gap-0.5 font-semibold leading-none text-nowrap">
+                                    <img src="assets/images/icons/briefcase-blue-fill.svg" class="size-5" alt="icon"> 
+                                    12 years
+                                </p>
+                                <p class="font-medium text-sm text-monday-gray leading-none" >Experience</p>
+                            </div>
+                            <div class="flex flex-col gap-2 items-center text-center">
+                                <p class="flex items-center gap-0.5 font-semibold leading-none">
+                                    <img src="assets/images/icons/woman-black-fill.svg" class="size-5" alt="icon"> 
+                                    Female
+                                </p>
+                                <p class="font-medium text-sm text-monday-gray leading-none" >Gender</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Choose-Date" class="flex flex-col w-full flex-1 p-5 pb-0 gap-4 bg-white mt-5 min-h-[536px]">
+                        <form action="mobile-review-checkout.html" class="flex flex-col gap-8">
+                            <div class="peer/date flex flex-col gap-4">
+                                <p class="font-bold">Choose Date</p>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" name="date" id="" class="absolute -z-10">
+                                        <p class="font-bold text-lg group-has-[:checked]:text-monday-blue transition-300">25 Apr</p>
+                                        <p class="font-semibold text-sm text-monday-gray leading-none">FRI</p>
+                                    </label>
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" disabled name="date" id="" class="absolute -z-10">
+                                        <p class="font-bold text-lg group-has-[:checked]:text-monday-blue transition-300">26 Apr</p>
+                                        <p class="font-semibold text-sm text-monday-gray leading-none">SAT</p>
+                                    </label>
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" name="date" id="" class="absolute -z-10">
+                                        <p class="font-bold text-lg group-has-[:checked]:text-monday-blue transition-300">27 Apr</p>
+                                        <p class="font-semibold text-sm text-monday-gray leading-none">SUN</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="peer/time peer-has-[:checked]/date:flex hidden flex-col gap-4">
+                                <p class="font-bold">Choose Time</p>
+                                <div class="grid grid-cols-3 gap-4">
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" name="time" id="" class="absolute -z-10">
+                                        <div class="flex items-center gap-1">
+                                            <div class="relative flex size-[18px] shrink-0">
+                                                <img src="assets/images/icons/clock-blue-thick.svg" class="absolute size-full object-contain opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                                <img src="assets/images/icons/clock-black-thick.svg" class="absolute size-full object-contain opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            </div>
+                                            <p class="font-bold group-has-[:checked]:text-monday-blue transition-300">10:30</p>
+                                        </div>
+                                        <p class="font-semibold text-sm text-monday-blue group-has-[:checked]:text-monday-gray group-has-[:disabled]:text-monday-gray transition-300 leading-none">Available</p>
+                                    </label>
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" disabled name="time" id="" class="absolute -z-10">
+                                        <div class="flex items-center gap-1">
+                                            <div class="relative flex size-[18px] shrink-0">
+                                                <img src="assets/images/icons/clock-blue-thick.svg" class="absolute size-full object-contain opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                                <img src="assets/images/icons/clock-black-thick.svg" class="absolute size-full object-contain opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            </div>
+                                            <p class="font-bold group-has-[:checked]:text-monday-blue transition-300">11:30</p>
+                                        </div>
+                                        <p class="font-semibold text-sm text-monday-blue group-has-[:checked]:text-monday-gray group-has-[:disabled]:text-monday-gray transition-300 leading-none">Soldout</p>
+                                    </label>
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" name="time" id="" class="absolute -z-10">
+                                        <div class="flex items-center gap-1">
+                                            <div class="relative flex size-[18px] shrink-0">
+                                                <img src="assets/images/icons/clock-blue-thick.svg" class="absolute size-full object-contain opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                                <img src="assets/images/icons/clock-black-thick.svg" class="absolute size-full object-contain opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            </div>
+                                            <p class="font-bold group-has-[:checked]:text-monday-blue transition-300">13:30</p>
+                                        </div>
+                                        <p class="font-semibold text-sm text-monday-blue group-has-[:checked]:text-monday-gray group-has-[:disabled]:text-monday-gray transition-300 leading-none">Available</p>
+                                    </label>
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" name="time" id="" class="absolute -z-10">
+                                        <div class="flex items-center gap-1">
+                                            <div class="relative flex size-[18px] shrink-0">
+                                                <img src="assets/images/icons/clock-blue-thick.svg" class="absolute size-full object-contain opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                                <img src="assets/images/icons/clock-black-thick.svg" class="absolute size-full object-contain opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            </div>
+                                            <p class="font-bold group-has-[:checked]:text-monday-blue transition-300">14:30</p>
+                                        </div>
+                                        <p class="font-semibold text-sm text-monday-blue group-has-[:checked]:text-monday-gray group-has-[:disabled]:text-monday-gray transition-300 leading-none">Available</p>
+                                    </label>
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" name="time" id="" class="absolute -z-10">
+                                        <div class="flex items-center gap-1">
+                                            <div class="relative flex size-[18px] shrink-0">
+                                                <img src="assets/images/icons/clock-blue-thick.svg" class="absolute size-full object-contain opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                                <img src="assets/images/icons/clock-black-thick.svg" class="absolute size-full object-contain opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            </div>
+                                            <p class="font-bold group-has-[:checked]:text-monday-blue transition-300">15:30</p>
+                                        </div>
+                                        <p class="font-semibold text-sm text-monday-blue group-has-[:checked]:text-monday-gray group-has-[:disabled]:text-monday-gray transition-300 leading-none">Available</p>
+                                    </label>
+                                    <label class="group relative flex flex-col items-center justify-center text-center rounded-xl ring-[1.5px] ring-monday-stroke p-4 gap-1 has-[:checked]:ring-2 has-[:checked]:ring-monday-blue has-[:checked]:bg-monday-blue/10 has-[:disabled]:bg-monday-stroke transition-300">
+                                        <input type="radio" name="time" id="" class="absolute -z-10">
+                                        <div class="flex items-center gap-1">
+                                            <div class="relative flex size-[18px] shrink-0">
+                                                <img src="assets/images/icons/clock-blue-thick.svg" class="absolute size-full object-contain opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                                <img src="assets/images/icons/clock-black-thick.svg" class="absolute size-full object-contain opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            </div>
+                                            <p class="font-bold group-has-[:checked]:text-monday-blue transition-300">16:30</p>
+                                        </div>
+                                        <p class="font-semibold text-sm text-monday-blue group-has-[:checked]:text-monday-gray group-has-[:disabled]:text-monday-gray transition-300 leading-none">Available</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="peer-has-[:checked]/time:flex hidden h-[104px] w-full">
+                                <div id="Bottom-Bar" class="flex relative w-full h-[104px] -ml-5">
+                                    <div class="fixed z-30 bottom-0 w-full max-w-[640px] px-5 py-6 bg-white border-t border-monday-stroke">
+                                        <button type="submit" class="flex items-center w-full justify-between rounded-full py-4 px-6 bg-monday-blue">
+                                            <span class="font-semibold text-lg leading-none text-white">Continue Payment</span>
+                                            <img src="assets/images/icons/arrow-right-circle-white.svg" class="flex size-6 shrink-0" alt="icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>

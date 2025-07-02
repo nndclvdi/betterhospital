@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+
+        <title>Better  - Hospital Management</title>
+        <link rel="icon" href="assets/images/logos/logo-notext.png" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="Mobile-Body" class="flex flex-col flex-1 bg-[#dae1e9] min-w-0">
+            <div id="Content-Container" class="flex flex-col min-h-screen w-full max-w-[640px] mx-auto bg-monday-background">
+                <div class="flex flex-col w-full pt-[60px] p-5 bg-white gap-2">
+                    <p class="font-semibold text-2xl capitalize">Hey 🙌, Welcome aboard!</p>
+                    <p class="font-medium text-monday-gray leading-none">Create your account to continue!</p>
+                </div>
+                <form action="mobile-signin.html" class="flex flex-1 flex-col">
+                    <div class="flex flex-col py-6 px-5 gap-8 bg-white mt-2 flex-1">
+                        <div class="flex items-center justify-between">
+                            <div class="group relative flex size-[100px] rounded-full overflow-hidden items-center justify-center bg-[#D7D7E417] border border-monday-stroke">
+                                <img
+                                    id="Thumbnail"
+                                    src="assets/images/icons/profile-photo-default.svg"
+                                    data-default="assets/images/icons/profile-photo-default.svg"
+                                    class="size-full object-cover"
+                                    alt="icon"
+                                />
+                                <input type="file" id="File-Input" accept="image/*" class="absolute inset-0 opacity-0 cursor-pointer" />
+                            </div>
+                            <button type="button" id="Add-Photo" class="btn btn-black w-fit font-medium text-sm text-nowrap gap-[6px] p-[14px] leading-none h-[46px]">
+                                Change Image
+                                <img src="assets/images/icons/receive-square-white.svg" class="flex size-4 shrink-0" alt="icon">
+                            </button>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="font-medium text-monday-gray">Complete Name</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/user-thin-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-medium text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[22px] group-has-[:placeholder-shown]:top-[33px] group-focus-within:top-[22px] transition-300">
+                                        Type your name
+                                    </p>
+                                    <input type="text" class="appearance-none w-full h-[66px] font-semibold rounded-3xl border-[2px] border-monday-border pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300 group-[&.invalid]/errorState:border-monday-red" placeholder="">
+                                </label>
+                                <span class="font-semibold text-sm text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="font-medium text-monday-gray">Phone No.</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/call-calling-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-medium text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[22px] group-has-[:placeholder-shown]:top-[33px] group-focus-within:top-[22px] transition-300">
+                                        Type your phone
+                                    </p>
+                                    <input type="tel" class="appearance-none w-full h-[66px] font-semibold rounded-3xl border-[2px] border-monday-border pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300 group-[&.invalid]/errorState:border-monday-red" placeholder="">
+                                </label>
+                                <span class="font-semibold text-sm text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="font-medium text-monday-gray">Choose Gender</p>
+                            <div class="flex items-center gap-4 h-[56px]">
+                                <label class="group relative flex items-center h-full py-4 px-5 gap-4 rounded-2xl border-[2px] border-monday-border focus-within:border-monday-black has-[:checked]:border-monday-blue has-[:checked]:bg-monday-blue/10 transition-300 w-full">
+                                    <div class="flex h-full shrink-0 pr-4 pl-1 border-r-[1.5px] border-monday-border group-has-[:checked]:border-monday-blue">
+                                        <div class="flex size-6 shrink-0 relative">
+                                            <img src="assets/images/icons/man-grey.svg" class="flex size-6 shrink-0 absolute opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/man-blue.svg" class="flex size-6 shrink-0 absolute opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                    </div>
+                                    <p class="font-semibold leading-none w-full text-monday-gray group-has-[:checked]:text-monday-blue">
+                                        Male
+                                    </p>
+                                    <input type="radio" name="gender" id="" class="absolute opacity-0">
+                                </label>
+                                <label class="group relative flex items-center h-full py-4 px-5 gap-4 rounded-2xl border-[2px] border-monday-border focus-within:border-monday-black has-[:checked]:border-monday-blue has-[:checked]:bg-monday-blue/10 transition-300 w-full">
+                                    <div class="flex h-full shrink-0 pr-4 pl-1 border-r-[1.5px] border-monday-border group-has-[:checked]:border-monday-blue">
+                                        <div class="flex size-6 shrink-0 relative">
+                                            <img src="assets/images/icons/woman-grey.svg" class="flex size-6 shrink-0 absolute opacity-100 group-has-[:checked]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/woman-blue.svg" class="flex size-6 shrink-0 absolute opacity-0 group-has-[:checked]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                    </div>
+                                    <p class="font-semibold leading-none w-full text-monday-gray group-has-[:checked]:text-monday-blue">
+                                        Female
+                                    </p>
+                                    <input type="radio" name="gender" id="" class="absolute opacity-0">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="font-medium text-monday-gray">Email Address</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/sms-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-medium text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[22px] group-has-[:placeholder-shown]:top-[33px] group-focus-within:top-[22px] transition-300">
+                                        Type your email
+                                    </p>
+                                    <input type="email" class="appearance-none w-full h-[66px] font-semibold rounded-3xl border-[2px] border-monday-border pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300 group-[&.invalid]/errorState:border-monday-red" placeholder="">
+                                </label>
+                                <span class="font-semibold text-sm text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="font-medium text-monday-gray">Password</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/key-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-medium text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[22px] group-has-[:placeholder-shown]:top-[33px] group-focus-within:top-[22px] transition-300">
+                                        Type your Password
+                                    </p>
+                                    <input type="password" class="appearance-none w-full h-[66px] font-semibold rounded-3xl border-[1.5px] border-monday-border pl-20 pr-16 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black group-[&.invalid]/errorState:border-monday-red transition-300 tracking-[0.3em]" placeholder="">
+                                </label>
+                                <span class="font-semibold text-sm text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <p class="font-medium text-monday-gray">Password Confirmation</p>
+                            <div class="group/errorState flex flex-col gap-2">
+                                <label class="group relative">
+                                    <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                        <img src="assets/images/icons/key-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                    </div>
+                                    <p class="placeholder font-medium text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[22px] group-has-[:placeholder-shown]:top-[33px] group-focus-within:top-[22px] transition-300">
+                                        Type your Password
+                                    </p>
+                                    <input type="password" class="appearance-none w-full h-[66px] font-semibold rounded-3xl border-[1.5px] border-monday-border pl-20 pr-16 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black group-[&.invalid]/errorState:border-monday-red transition-300 tracking-[0.3em]" placeholder="">
+                                </label>
+                                <span class="font-semibold text-sm text-monday-red hidden leading-none group-[&.invalid]/errorState:block">Lorem dolor error message here</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Bottom-Bar" class="flex relative w-full h-[138px] mt-2">
+                        <div class="fixed z-30 bottom-0 flex flex-col gap-3 w-full max-w-[640px] px-5 py-6 bg-white border-t border-monday-stroke">
+                            <button type="submit" class="flex items-center w-full h-[56px] justify-center gap-[6px] rounded-2xl py-4 px-6 bg-monday-blue">
+                                <span class="font-semibold text-lg leading-none text-white">Register Account</span>
+                            </button>
+                            <p class="font-semibold text-sm capitalize text-center text-monday-gray">Already have an account? <a href="mobile-signin.html" class="text-monday-blue hover:underline">Login Now</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="js/add-profile-photo.js"></script>
+    </body>
+</html>

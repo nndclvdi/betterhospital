@@ -1,0 +1,166 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Gender {
+  MALE
+  FEMALE
+}
+
+enum Role {
+  MANAGER
+  PATIENT
+}
+
+model User {
+  id String @id @default(uuid())
+
+  photo    String
+  name     String
+  phone    String
+  gender   Gender
+  email    String @unique
+  password String
+  role     Role
+
+  transactions Transaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Hospital {
+  id String @id @default(uuid())
+
+  name        String
+  phone       String
+  about       String
+  city        String
+  postal_code String
+  address     String
+  photo       String
+
+  specialists  HospitalSpecialist[]
+  transactions Transaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("hospitals")
+}
+
+model Specialist {
+  id String @id @default(uuid())
+
+  photo String
+  name  String
+  price Int
+  about String
+
+  hospitals    HospitalSpecialist[]
+  transactions Transaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("specialists")
+}
+
+model Doctor {
+  id String @id @default(uuid())
+
+  name       String
+  photo      String
+  about      String
+  gender     Gender
+  experience Int
+
+  hospitals    HospitalDoctor[]
+  transactions Transaction[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("doctors")
+}
+
+model HospitalSpecialist {
+  id String @id @default(uuid())
+
+  hospital_id String
+  hospital    Hospital @relation(fields: [hospital_id], references: [id], onDelete: Cascade)
+
+  specialist_id String
+  specialist    Specialist @relation(fields: [specialist_id], references: [id], onDelete: Cascade)
+
+  doctors HospitalDoctor[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("hospital_specialists")
+}
+
+model HospitalDoctor {
+  id String @id @default(uuid())
+
+  doctor_id String
+  doctor    Doctor @relation(fields: [doctor_id], references: [id], onDelete: Cascade)
+
+  hospital_specialist_id String
+  hospital_specialist    HospitalSpecialist @relation(fields: [hospital_specialist_id], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("hospital_doctors")
+}
+
+enum TransactionStatus {
+  PENDING
+  FAILED
+  SUCCESS
+}
+
+model Transaction {
+  id String @id @default(uuid())
+
+  doctor_id String
+  doctor    Doctor @relation(fields: [doctor_id], references: [id], onDelete: Cascade)
+
+  specialist_id String
+  specialist    Specialist @relation(fields: [specialist_id], references: [id], onDelete: Cascade)
+
+  hospital_id String
+  hospital    Hospital @relation(fields: [hospital_id], references: [id], onDelete: Cascade)
+
+  user_id String
+  user    User   @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  booking_date DateTime
+  status       TransactionStatus
+  proof        String
+
+  subtotal Int
+  tax_fee  Int
+  total    BigInt
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("transactions")
+}

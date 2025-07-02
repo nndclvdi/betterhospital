@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+
+        <title>Better - Hospital Management</title>
+        <link rel="icon" href="assets/images/logos/logo-notext.png" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-container" class="flex flex-1">
+            <aside class="relative flex h-auto w-[280px] shrink-0 bg-white">
+                <div class="flex flex-col fixed top-0 w-[280px] shrink-0 h-screen pt-[30px] px-4 gap-[30px]">
+                    <img src="assets/images/logos/logo.svg" class="h-8 w-fit" alt="logo">
+                    <div class="flex flex-col gap-5 mb-5 overflow-y-scroll hide-scrollbar h-full overscroll-contain">
+                        <nav class="flex flex-col gap-4">
+                            <p class="font-medium text-monday-gray">Main Menu</p>
+                            <ul class="flex flex-col gap-2">
+                                <li class="group">
+                                    <a href="overview.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/home-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/home-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Overview
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a href="manage-specialist.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/stetoscop-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/stetoscop-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Specialist
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a href="manage-hospitals.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/hospital-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/hospital-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Hospitals
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group">
+                                    <a href="manage-transactions.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/note-2-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/note-2-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Transactions
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="flex flex-col gap-4">
+                            <p class="font-medium text-monday-gray">Account Settings</p>
+                            <ul class="flex flex-col gap-2">
+                                <li class="group">
+                                    <a href="manage-doctors.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/profile-2user-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/profile-2user-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Doctors
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                                <li class="group flex flex-col">
+                                    <button data-expand="Manage-Users-Accordion" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/user-square-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full text-left">
+                                            Manage User
+                                        </p>
+                                        <img src="assets/images/icons/arrow-circle-up.svg" class="size-6 flex shrink-0 transition-300" alt="icon">
+                                    </button>
+                                    <div id="Manage-Users-Accordion" class="flex">
+                                        <div class="flex w-[56px] shrink-0 justify-end items-start">
+                                            <img src="assets/images/icons/accordion-branch.svg" class="w-[28px]" alt="icon">
+                                        </div>
+                                        <ul class="flex flex-col gap-1 w-full">
+                                            <li class="group">
+                                                <a href="manage-roles.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                                    <div class="relative flex size-6 shrink-0">
+                                                        <img src="assets/images/icons/profile-tick-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                                        <img src="assets/images/icons/profile-tick-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                                    </div>
+                                                    <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                                        Roles
+                                                    </p>
+                                                    <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                                </a>
+                                            </li>
+                                            <li class="group">
+                                                <a href="manage-users.html" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                                    <div class="relative flex size-6 shrink-0">
+                                                        <img src="assets/images/icons/profile-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                                        <img src="assets/images/icons/profile-blue.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                                    </div>
+                                                    <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                                        Users
+                                                    </p>
+                                                    <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="group">
+                                    <a href="#" class="flex items-center w-full min-h-14 gap-2 rounded-2xl overflow-hidden py-[10px] pl-4 group-[&.active]:bg-monday-blue/10 transition-300">
+                                        <div class="relative flex size-6 shrink-0">
+                                            <img src="assets/images/icons/setting-black.svg" class="size-6 absolute opacity-100 group-[&.active]:opacity-0 transition-300" alt="icon">
+                                            <img src="assets/images/icons/setting-black.svg" class="size-6 absolute opacity-0 group-[&.active]:opacity-100 transition-300" alt="icon">
+                                        </div>
+                                        <p class="font-medium group-[&.active]:text-monday-blue transition-300 w-full">
+                                            Settings
+                                        </p>
+                                        <div class="w-2 h-9 shrink-0 rounded-l-xl bg-monday-blue hidden group-[&.active]:flex transition-300"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </aside>
+            <div id="Content" class="flex flex-col flex-1 p-6 pt-0">
+                <div id="Top-Bar" class="flex items-center w-full gap-6 mt-[30px] mb-6">
+                    <div class="flex items-center gap-6 h-[102px] bg-white w-full rounded-3xl p-[18px]">
+                        <div class="flex flex-col gap-2 w-full">
+                            <h1 class="font-bold text-2xl capitalize">Transaction Details</h1>
+                            <a href="manage-transactions.html" class="flex items-center gap-1 font-semibold text-monday-gray text-lg leading-none">
+                                <img src="assets/images/icons/arrow-left-grey.svg" class="size-[18px] flex shrink-0" alt="icon"> 
+                                Manage Transactions
+                            </a>
+                        </div>
+                        <div class="flex items-center flex-nowrap gap-3">
+                            <a href="#">
+                                <div class="flex size-14 rounded-full bg-monday-gray-background items-center justify-center overflow-hidden">
+                                    <img src="assets/images/icons/search-normal-black.svg" class="size-6" alt="icon">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="flex size-14 rounded-full bg-monday-gray-background items-center justify-center overflow-hidden">
+                                    <img src="assets/images/icons/notification-black.svg" class="size-6" alt="icon">
+                                </div>
+                            </a>
+                            <div class="relative w-fit">
+                                <div class="flex size-14 rounded-full bg-monday-lime-green items-center justify-center overflow-hidden">
+                                    <img src="assets/images/icons/help-desk-black.svg" class="size-6" alt="icon">
+                                </div>
+                                <p class="absolute transform -translate-x-1/2 left-1/2 -bottom-2 rounded-[20px] py-1 px-2 bg-monday-black text-white w-fit font-extrabold text-[8px]">24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 h-[102px] bg-white w-fit rounded-3xl p-[18px]">
+                        <div class="flex rounded-full overflow-hidden size-14">
+                            <img src="assets/images/photos/photo-1.png" class="size-full object-cover" alt="photo">
+                        </div>
+                        <div class="flex flex-col gap-[6px] min-w-[155px] w-fit">
+                            <p class="font-semibold text-lg leading-tight">Nobilo Reyno</p>
+                            <p class="flex items-center gap-1 font-semibold text-monday-gray text-lg leading-none">
+                                <img src="assets/images/icons/user-grey.svg" class="size-[18px]" alt="icon"> 
+                                Manager
+                            </p>
+                        </div>
+                        <a href="mobile-discover.html" class="flex w-6">
+                            <img src="assets/images/icons/logout.svg" class="flex size-6 shrink-0" alt="icon">
+                        </a>
+                    </div>
+                </div>
+                <main class="flex flex-col gap-5 flex-1">
+                    <section id="Transaction-info" class="flex items-center justify-between gap-5 rounded-[20px] p-5 bg-white">
+                        <div class="flex items-center gap-4 w-full">
+                            <div class="flex size-[92px] rounded-full bg-monday-background overflow-hidden shrink-0">
+                                <img src="assets/images/photos/user-2.png" class="size-full object-cover" alt="icon">
+                            </div>
+                            <div class="flex flex-col gap-[6px] flex-1">
+                                <p class="font-semibold text-xl line-clamp-1">Andi Alif Rahim</p>
+                                <p class="flex items-center gap-1 font-medium text-monday-gray text-lg leading-none">
+                                    <img src="assets/images/icons/woman-grey.svg" class="size-6" alt="icon"> 
+                                    Female
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 w-full">
+                            <div class="flex size-[92px] rounded-2xl bg-monday-background overflow-hidden shrink-0 p-[10px]">
+                                <img src="assets/images/thumbnails/heart.png" class="size-full object-cover" alt="icon">
+                            </div>
+                            <div class="flex flex-col gap-[6px] flex-1">
+                                <p class="font-semibold text-xl line-clamp-1">Cardiology</p>
+                                <p class="flex items-center gap-1 font-medium text-monday-gray text-lg leading-none">
+                                    <img src="assets/images/icons/hospital-grey.svg" class="size-6" alt="icon"> 
+                                    Wannabe Hospital
+                                </p>
+                            </div>
+                        </div>
+                        <p class="badge flex w-[100px] shrink-0 rounded-full py-3 items-center justify-center text-white font-bold text-sm leading-none bg-monday-orange">
+                            Waiting
+                        </p>
+                    </section>
+                    <div class="flex gap-5 flex-1">
+                        <section id="Booking-Details" class="flex flex-col gap-5 w-[calc((550/960)*100%)] shrink-0">
+                            <div id="Note-Red" class="relative w-full h-[92px] rounded-[20px] overflow-hidden">
+                                <div class="absolute w-full h-full overflow-hidden">
+                                    <img src="assets/images/backgrounds/red-note.svg" class="w-full h-full object-cover" alt="background">
+                                </div>
+                                <div class="relative flex items-center w-full h-full p-5 gap-[10px]">
+                                    <img src="assets/images/icons/note-remove-white-fill.svg" class="flex size-[52px] shrink-0" alt="icon">
+                                    <p class="font-semibold text-lg leading-[1.4em] text-white">Sorry, the doctor isn’t available. We’re processing your refund now.</p>
+                                </div>
+                            </div>
+                            <div id="Note-Green" class="relative w-full h-[92px] rounded-[20px] overflow-hidden">
+                                <div class="absolute w-full h-full overflow-hidden">
+                                    <img src="assets/images/backgrounds/green-note.svg" class="w-full h-full object-cover" alt="background">
+                                </div>
+                                <div class="relative flex items-center w-full h-full p-5 gap-[10px]">
+                                    <img src="assets/images/icons/stickynote-white-fill.svg" class="flex size-[52px] shrink-0" alt="icon">
+                                    <p class="font-semibold text-lg leading-[1.4em] text-white">Appointment approved. The doctor has confirmed their availability 😄 </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-col h-fit w-full rounded-[20px] p-5 gap-5 bg-white">
+                                <p class="header font-semibold text-xl">Booking Details</p>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center gap-4 w-full">
+                                            <div class="flex size-[92px] rounded-full bg-monday-background overflow-hidden shrink-0">
+                                                <img src="assets/images/photos/photo-2.png" class="size-full object-cover" alt="icon">
+                                            </div>
+                                            <div class="flex flex-col gap-[6px] flex-1">
+                                                <p class="font-semibold text-xl">Momo Sunchiko</p>
+                                                <p class="flex items-center gap-1 font-medium text-monday-gray text-lg">
+                                                    <img src="assets/images/icons/stetoscop-grey.svg" class="size-5" alt="icon"> 
+                                                    Cardiology
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col justify-center text-right gap-2 shrink-0">
+                                            <p class="flex items-center gap-0.5 font-semibold text-lg leading-none text-nowrap">
+                                                <img src="assets/images/icons/briefcase-blue-fill.svg" class="size-5" alt="icon"> 
+                                                12 years
+                                            </p>
+                                            <p class="font-medium text-lg text-monday-gray leading-none">Experience</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col rounded-2xl border border-monday-stroke p-5 gap-5">
+                                        <div class="flex items-center justify-between">
+                                            <p class="flex items-center gap-[6px] font-medium text-monday-gray text-lg leading-none">
+                                                <img src="assets/images/icons/calendar-2-grey.svg" class="size-6" alt="icon"> 
+                                                Date
+                                            </p>
+                                            <p class="font-semibold text-xl leading-none">25 Maret 2025</p>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <p class="flex items-center gap-[6px] font-medium text-monday-gray text-lg leading-none">
+                                                <img src="assets/images/icons/clock-grey.svg" class="size-6" alt="icon"> 
+                                                Time
+                                            </p>
+                                            <p class="font-semibold text-xl leading-none">12:00 AM</p>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <p class="flex items-center gap-[6px] font-medium text-monday-gray text-lg leading-none">
+                                                <img src="assets/images/icons/ticket-expired-grey.svg" class="size-6" alt="icon"> 
+                                                Price
+                                            </p>
+                                            <p class="font-semibold text-xl leading-none">Rp 100.000</p>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <p class="flex items-center gap-[6px] font-medium text-monday-gray text-lg leading-none">
+                                                <img src="assets/images/icons/receipt-2-grey.svg" class="size-6" alt="icon"> 
+                                                Tax 11%
+                                            </p>
+                                            <p class="font-semibold text-xl leading-none">Rp 11.000</p>
+                                        </div>
+                                        <hr class="border-monday-stroke">
+                                        <div class="flex items-center justify-between">
+                                            <p class="flex items-center gap-[6px] font-medium text-monday-gray text-lg leading-none">
+                                                <img src="assets/images/icons/receipt-text-grey.svg" class="size-6" alt="icon"> 
+                                                Grand Total
+                                            </p>
+                                            <p class="font-semibold text-2xl leading-none">Rp 111.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="header font-semibold text-xl">Proof of Payment</p>
+                                    <div class="relative w-full h-[333px] rounded-2xl overflow-hidden bg-monday-gray-background">
+                                        <img src="assets/images/backgrounds/proof.png" class="size-full object-cover" alt="proof">
+                                        <button data-modal="Preview-Modal" class="absolute transform -translate-x-1/2 left-1/2 bottom-3 flex items-center justify-center rounded-full py-[10px] px-3 gap-[6px] bg-white">
+                                            <img src="assets/images/icons/maximize-3-black.svg" class="size-5 flex shrink-0" alt="icon">
+                                            <p class="font-extrabold text-sm leading-none">PREVIEW</p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <button class="btn btn-primary font-semibold text-lg leading-none">Approve Order</button>
+                                    <button class="btn bg-monday-red/10 text-monday-red rounded-2xl font-semibold text-lg leading-none">Reject Order</button>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="Hospital-Details" class="flex flex-col h-fit w-full rounded-[20px] p-5 gap-6 bg-white">
+                            <p class="header font-semibold text-xl">Hospital Details</p>
+                            <div class="flex items-center gap-4 w-full">
+                                <div class="flex size-[92px] rounded-2xl bg-monday-background overflow-hidden shrink-0">
+                                    <img src="assets/images/thumbnails/hopistal-1.png" class="size-full object-cover" alt="icon">
+                                </div>
+                                <div class="flex flex-col gap-2 flex-1">
+                                    <p class="font-semibold text-xl line-clamp-1">Wannabe Hospital</p>
+                                    <p class="flex items-center gap-1 font-medium text-monday-gray text-lg leading-none">
+                                        <img src="assets/images/icons/location-grey.svg" class="size-6" alt="icon"> 
+                                        Wannabe Hospital
+                                    </p>
+                                    <p class="flex items-center gap-0.5 font-semibold text-lg leading-none">
+                                        <img src="assets/images/icons/star-sliced.svg" class="size-6" alt="icon"> 
+                                        4.8/5.0
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-full h-[290px] overflow-hidden rounded-3xl resize-none">
+                                <div id="g-mapdisplay" class="size-full">
+                                    <iframe class="size-full border-none" frameborder="0" 
+                                        src="https://www.google.com/maps/embed/v1/place?q=Jakarta&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                                    >
+                                    </iframe>
+                                </div>
+                            </div>
+                            <p class="font-semibold text-lg leading-[1.6em]">Gamiel Warehouse Jl. Industri Raya No. 123 Kawasan Pergudangan Modern Cikarang Barat, Bekasi Jawa Barat, 17530 Indonesia</p>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <div id="Preview-Modal" class="modal hidden flex flex-1 items-center justify-center h-full fixed top w-full">
+            <div data-close-modal class="backdrop absolute w-full h-full bg-[#292D32B2]"></div>
+            <div class="relative flex flex-col w-[720px] h-fit m-auto items-center justify-center gap-8">
+                <div class="flex w-full items-center justify-center">
+                    <div class="rounded-2xl overflow-hidden size-auto">
+                        <img src="assets/images/backgrounds/proof.png" class="w-full h-full object-contain max-h-[80vh]" alt="image">
+                    </div>
+                </div>
+                <button data-close-modal class="flex items-center w-fit h-12 rounded-full border border-white/10 bg-white/10 py-3 px-4 gap-2">
+                    <img src="assets/images/icons/close-circle-white.svg" class="flex size-6 shrink-0" alt="icon">
+                    <p class="font-medium text-white">Close Preview</p>
+                </button>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/accordion.js"></script>
+
+        <script src="js/modal.js"></script>
+    </body>
+</html>

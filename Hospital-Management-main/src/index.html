@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+
+        <title>Better - Hospital Management</title>
+        <link rel="icon" href="assets/images/logos/logo-notext.png" type="image/png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="absolute w-screen h-screen flex overflow-hidden">
+            <img src="assets/images/backgrounds/log-bg.png" class="w-full h-full top-0 object-contain object-top" alt="background">
+        </div>
+        <main class="relative flex flex-1 h-screen items-center">
+            <div class="flex flex-1 items-center justify-center">
+                <form action="overview.html" class="flex flex-col w-[486px] shrink-0 rounded-3xl gap-8 p-6 bg-white">
+                    <img src="assets/images/logos/logo.svg" class="w-full h-[34px] mx-auto" alt="logo">
+                    <div class="flex flex-col gap-8">
+                        <div class="flex flex-col gap-2 text-center">
+                            <p class="font-semibold text-2xl">Hey there! 🙌🏻 Welcome back!</p>
+                            <p class="font-medium text-monday-gray">Access your account to continue</p>
+                        </div>
+                        <div class="flex flex-col gap-8 w-full">
+                            <label class="group relative">
+                                <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                    <img src="assets/images/icons/sms-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                </div>
+                                <p class="placeholder font-medium text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[25px] group-has-[:placeholder-shown]:top-[36px] group-focus-within:top-[25px] transition-300">
+                                    Email Address
+                                </p>
+                                <input type="email" class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[1.5px] border-monday-border pl-20 pr-6 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300" placeholder="">
+                            </label>
+                            <label class="group relative">
+                                <div class="flex items-center pr-4 absolute transform -translate-y-1/2 top-1/2 left-6 border-r-[1.5px] border-monday-border ">
+                                    <img src="assets/images/icons/key-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                </div>
+                                <p class="placeholder font-medium text-monday-gray text-sm absolute -translate-y-1/2 left-[81px] top-[25px] group-has-[:placeholder-shown]:top-[36px] group-focus-within:top-[25px] transition-300">
+                                    Your password
+                                </p>
+                                <input id="passwordInput" type="password" class="appearance-none w-full h-[72px] font-semibold text-lg rounded-3xl border-[1.5px] border-monday-border pl-20 pr-16 pb-[14.5px] pt-[34.5px] placeholder-shown:pt-[14.5px] focus:border-monday-black transition-300 tracking-[0.3em]" placeholder="">
+                                <button id="togglePassword" type="button" class="absolute transform -translate-y-1/2 top-1/2 right-6">
+                                    <img src="assets/images/icons/eye-grey.svg" class="flex size-6 shrink-0" alt="icon">
+                                </button>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full font-medium">Sign In</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <script src="js/reveal-password.js"></script>
+          
+    </body>
+</html>
